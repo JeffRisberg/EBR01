@@ -2,10 +2,15 @@
 
 module.exports = function(environment) {
   var ENV = {
-    modulePrefix: 'ember-todo',
+    modulePrefix: 'ebr01',
     environment: environment,
     baseURL: '/',
     locationType: 'auto',
+    contentSecurityPolicy: {
+      'default-src': "'none'",
+      'style-src': "'self' 'unsafe-inline' use.typekit.net",
+      'connect-src': "'self' blob:"
+    },
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build

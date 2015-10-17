@@ -1,0 +1,12 @@
+<div>
+    Type a new campaign, press enter:<br/>
+    {{input-task action='createCampaign'}}
+</div>
+<ul>
+    {{#each model as |campaign|}}
+        <li>
+            <span>{{campaign.name}}</span>
+            <span>{{campaign.formattedStartDate}}</span>
+        </li>
+    {{/each}}
+</ul>
