@@ -5,7 +5,8 @@ export default Ember.Controller.extend({
         createCampaign(name) {
             const campaign = this.get('store').createRecord('campaign', {
                 name,
-                startDate: Date.now()
+                status: "Enabled",
+                startDate: new Date()
             });
             campaign.save();
         }
