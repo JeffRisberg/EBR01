@@ -9,5 +9,5 @@ export default DS.Model.extend({
         var date = this.get('startDate');
 
         return moment(date).format('LL');
-    }.property('date')
+    }.property('startDate')
 });
